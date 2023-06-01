@@ -1,0 +1,26 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "MelodyMate",
+    "name_for_model": "melodymate",
+    "description_for_human": "MelodyMate is a plugin that interacts with Spotify's API to create personalized playlists based on user's preferences.",
+    "description_for_model": "MelodyMate is a plugin that interacts with Spotify's API to create personalized playlists based on user's preferences. It can create playlists, fetch playlists, and add tracks to playlists.",
+    "auth": {
+        "type": "oauth",
+        "instructions": "To use MelodyMate, you need to authenticate with your Spotify account.",
+        "client_url": "https://accounts.spotify.com/authorize",
+        "scope": "user-read-private user-read-email playlist-read-private playlist-modify-public playlist-modify-private",
+        "authorization_url": "https://accounts.spotify.com/api/token",
+        "authorization_content_type": "application/x-www-form-urlencoded",
+        "verification_tokens": {
+            "openai": "Put your token here from ChatGPT UI"
+        }
+    },
+    "api": {
+        "type": "openapi",
+        "url": "https://melody-mate.vercel.co/.well-known/openapi.yaml",
+        "is_user_authenticated": true
+    },
+    "logo_url": "https://melody-mate.vercel.co/getImage",
+    "contact_email": "support@melody-mate.vercel.co",
+    "legal_info_url": "https://melody-mate.vercel.co/legal"
+}
