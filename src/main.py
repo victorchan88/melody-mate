@@ -32,8 +32,6 @@ def get_logo():
 
 @app.route('/playlist', methods=['GET'])
 def fetch_playlist():
-    Test = SpotifyClient(SPOTIFY_API_URL, "abc")
-    app.logger.info(Test.get_auth_header())
     app.logger.info("Creating a new playlist")
     query = request.args.get('query')
     auth_header = request.headers.get('Authorization')
