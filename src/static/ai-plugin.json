@@ -17,7 +17,7 @@
     },
     "api": {
         "type": "openapi",
-        "url": "https://melody-mate.vercel.app/.well-known/openapi.yaml",
+        "url": "https://melody-mate.vercel.app/static/openapi.yaml",
         "is_user_authenticated": true
     },
     "logo_url": "https://melody-mate.vercel.app/getImage",
