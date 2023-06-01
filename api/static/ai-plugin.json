@@ -17,10 +17,10 @@
     },
     "api": {
         "type": "openapi",
-        "url": "https://melody-mate.victorchan88.repl.co/.well-known/openapi.yaml",
+        "url": "https://melody-mate.vercel.co/.well-known/openapi.yaml",
         "is_user_authenticated": true
     },
-    "logo_url": "https://melody-mate.victorchan88.repl.co/getImage",
-    "contact_email": "support@melodymate.com",
-    "legal_info_url": "https://melody-mate.victorchan88.repl.co/legal"
+    "logo_url": "https://melody-mate.vercel.co/getImage",
+    "contact_email": "support@melody-mate.vercel.co",
+    "legal_info_url": "https://melody-mate.vercel.co/legal"
 }

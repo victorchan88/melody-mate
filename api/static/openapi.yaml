@@ -4,7 +4,7 @@ info:
   description: A ChatGPT plugin for making playlists on Spotify.
   version: 'v1'
 servers:
-  - url: https://melody-mate.victorchan88.repl.co
+  - url: https://melody-mate.vercel.co
 paths:
   /playlist:
     get:
