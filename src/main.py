@@ -116,7 +116,7 @@ def fetch_playlist():
 @app.route('/.well-known/ai-plugin.json')
 def serve_ai_plugin():
     app.logger.info("Serving ai-plugin.json")
-    return send_from_directory('.',
+    return send_from_directory('./static',
                                 'ai-plugin.json',
                                 mimetype='application/json')
 
@@ -124,7 +124,7 @@ def serve_ai_plugin():
 @app.route('/.well-known/openapi.yaml')
 def serve_openapi_yaml():
     app.logger.info("Serving openapi.yaml")
-    return send_from_directory('.', 'openapi.yaml', mimetype='text/yaml')
+    return send_from_directory('./static', 'openapi.yaml', mimetype='text/yaml')
 
 
 if __name__ == '__main__':
