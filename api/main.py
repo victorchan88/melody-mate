@@ -3,7 +3,7 @@ from logging import StreamHandler
 from waitress import serve
 from flask import Flask, request, jsonify, send_from_directory, send_file
 import random
-from src.services.spotify import SpotifyClient
+from api.services.spotify import SpotifyClient
 
 app = Flask(__name__)
 
