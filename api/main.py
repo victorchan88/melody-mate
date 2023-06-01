@@ -1,6 +1,6 @@
 import logging
 from logging import StreamHandler
-from waitress import serve
+# from waitress import serve
 from flask import Flask, request, jsonify, send_from_directory, send_file
 import random
 from api.services.spotify import SpotifyClient
