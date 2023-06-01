@@ -122,5 +122,5 @@ def serve_openapi_yaml():
     app.logger.info("Serving openapi.yaml")
     return send_from_directory('./static', 'openapi.yaml', mimetype='text/yaml')
 
-if __name__ == '__main__':
-    serve(app, host="0.0.0.0", port=8080)
+# if __name__ == '__main__':
+#     serve(app, host="0.0.0.0", port=8080)
