@@ -3,7 +3,7 @@ from logging import StreamHandler
 from waitress import serve
 from flask import Flask, request, jsonify, send_from_directory, send_file
 import random
-from services.spotify import SpotifyClient
+from src.services.spotify import SpotifyClient
 
 app = Flask(__name__)
 
@@ -114,16 +114,10 @@ def fetch_playlist():
 @app.route('/.well-known/ai-plugin.json')
 def serve_ai_plugin():
     app.logger.info("Serving ai-plugin.json")
-    return send_from_directory('./static',
-                                'ai-plugin.json',
-                                mimetype='application/json')
+    return send_from_directory('./static', 'ai-plugin.json', mimetype='application/json')
 
 
 @app.route('/.well-known/openapi.yaml')
 def serve_openapi_yaml():
     app.logger.info("Serving openapi.yaml")
     return send_from_directory('./static', 'openapi.yaml', mimetype='text/yaml')
-
-
-if __name__ == '__main__':
-    serve(app, host="0.0.0.0", port=8080)
