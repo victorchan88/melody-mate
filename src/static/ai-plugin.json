@@ -12,7 +12,7 @@
         "authorization_url": "https://accounts.spotify.com/api/token",
         "authorization_content_type": "application/x-www-form-urlencoded",
         "verification_tokens": {
-            "openai": "Put your token here from ChatGPT UI"
+            "openai": "89e67166be334798afeb5cbff65d36e6"
         }
     },
     "api": {
