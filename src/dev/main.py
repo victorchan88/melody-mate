@@ -123,7 +123,7 @@ def start_session():
         db.session.commit()
         return jsonify({"message": "Session started with existing tokens"}), 200
     
-    return redirect("https://melody-mate.victorchan88.repl.co/login")
+    return redirect("http://localhost:8080/login")
 
 
 @app.route('/playlist', methods=['GET'])
