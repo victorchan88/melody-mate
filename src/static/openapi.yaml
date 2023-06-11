@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
   title: MelodyMate
-  description: A tool creates playlists on Spotify.
+  description: A tool that creates playlists on Spotify.
   version: 'v1'
 servers:
   - url: https://melody-mate.vercel.app
