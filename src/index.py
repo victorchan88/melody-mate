@@ -4,6 +4,7 @@ from logging import StreamHandler
 from flask import Flask, request, jsonify, send_from_directory, send_file
 import random
 from src.services.spotify import SpotifyClient
+import os
 
 app = Flask(__name__)
 
@@ -32,7 +33,8 @@ def get_logo():
 
 @app.route('/legal')
 def get_legal():
-    return send_from_directory('src/static', 'legal.pdf')
+    static_folder = os.path.abspath(os.path.dirname(__file__)) + '/static'
+    return send_from_directory(static_folder, 'legal.pdf', mimetype='application/pdf')
 
 @app.route('/playlist', methods=['GET'])
 def fetch_playlist():
