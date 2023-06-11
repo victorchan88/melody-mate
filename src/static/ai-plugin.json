@@ -2,8 +2,8 @@
     "schema_version": "v1",
     "name_for_human": "MelodyMate",
     "name_for_model": "melodymate",
-    "description_for_human": "MelodyMate is a tool that interacts with Spotify's music service to curate personalized playlists based on user's preferences",
-    "description_for_model": "MelodyMate is a tool that interacts with Spotify's music service to create personalized playlists based on user's preferences. It can create playlists, fetch playlists, and add tracks to playlists.",
+    "description_for_human": "MelodyMate is a tool that interacts with Spotify's service to curate personalized playlists based on user's preferences",
+    "description_for_model": "MelodyMate is a tool that interacts with Spotify's service to create personalized playlists based on user's preferences. It can create playlists, fetch playlists, and add tracks to playlists.",
     "auth": {
         "type": "oauth",
         "instructions": "To use MelodyMate, you need to authenticate with your Spotify account.",
