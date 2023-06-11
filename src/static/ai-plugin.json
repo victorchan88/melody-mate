@@ -12,7 +12,7 @@
         "authorization_url": "https://accounts.spotify.com/api/token",
         "authorization_content_type": "application/x-www-form-urlencoded",
         "verification_tokens": {
-            "openai": "3597f16c331d4679a5bed6c263254872"
+            "openai": "Placeholder for openai token"
         }
     },
     "api": {
