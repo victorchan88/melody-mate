@@ -23,7 +23,7 @@ app.logger.info("Application started")
 
 @app.route('/')
 def index():
-    return jsonify({"message": "Welcome to MelodyMate - a ChatGPT plugin for making playlists on Spotify"})
+    return jsonify({"message": "Welcome to MelodyMate - a tool for making playlists on Spotify"})
 
 @app.route('/getImage')
 def get_logo():

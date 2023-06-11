@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
-  title: MelodyMate ChatGPT Plugin
-  description: A ChatGPT plugin for making playlists on Spotify.
+  title: MelodyMate
+  description: A tool creates playlists on Spotify.
   version: 'v1'
 servers:
   - url: https://melody-mate.vercel.app
