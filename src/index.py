@@ -28,7 +28,7 @@ def index():
 
 @app.route('/getImage')
 def get_logo():
-    filename = './static/logo.png'
+    filename = './static/logo-color.png'
     return send_file(filename, mimetype='image/png')
 
 @app.route('/legal')
