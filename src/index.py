@@ -32,8 +32,7 @@ def get_logo():
 
 @app.route('/legal')
 def get_legal():
-    with open('./static/legal.pdf', 'rb') as static_file:
-        return send_file(static_file, attachment_filename='legal.pdf')
+    return send_from_directory('src/static', 'legal.pdf')
 
 @app.route('/playlist', methods=['GET'])
 def fetch_playlist():
