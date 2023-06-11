@@ -30,6 +30,11 @@ def get_logo():
     filename = './static/logo.png'
     return send_file(filename, mimetype='image/png')
 
+@app.route('/legal')
+def get_logo():
+    filename = './static/legal.pdf'
+    return send_file(filename, mimetype='application/pdf')
+
 @app.route('/playlist', methods=['GET'])
 def fetch_playlist():
     app.logger.info("Creating a new playlist")
