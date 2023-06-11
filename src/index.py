@@ -31,7 +31,7 @@ def get_logo():
     return send_file(filename, mimetype='image/png')
 
 @app.route('/legal')
-def get_logo():
+def get_legal():
     with open('./static/legal.pdf', 'rb') as static_file:
         return send_file(static_file, attachment_filename='legal.pdf')
 
